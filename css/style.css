@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Menu */
+.header-container{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+
+.header-container header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-container header .logo a{
+    font-family: 'Righteous';
+    font-size: 2.2rem;
+    color: #1CB689;
+    text-decoration: none;
+}
+
+.header-container header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.header-container header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 1rem;
+    padding: .2rem;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.header-container header nav ul li a:hover{
+    color: #1CB689;
+}
+
+.nav-responsive{
+    background-color: #1CB689;
+    color: #fff;
+    padding: .3rem .8rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Section Home */
+
+.home{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/52894.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.home .banner-container{
+    padding: 1.3rem;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 2.5rem;
+
+}
+
+.home .banner-container img{
+    margin-top: 2.5rem;
+    border: 10px solid #1CB689;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.home .banner-container h1{
+    margin-top: 2.5rem;
+    font-size: 2.5em;
+    font-family: 'Righteous'; 
+}
+
+.home .banner-container h2{
+    font-size: 1em;
+    font-weight: normal;
+
+}
+
+.home .banner-container .socials a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 2.5rem .3rem;
+    font-size: 1.25em;
+    transition: .3s;
+}
+
+.home .banner-container .socials a:hover{
+    background-color: #1CB689;
+}
+
+/* About me */
+
+.aboutme{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 3.1rem 1.25rem;
+}
+
+.aboutme .section-container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.aboutme h2{
+    font-size: 3rem;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 1.25rem 0;
+
+
+}
+
+.aboutme .section-container p{
+    font: 1rem;
+    line-height: 22px;
+    margin-bottom: 1.25rem;
+}
+
+.aboutme .section-container span{
+    color: #1CB689;
+    font-weight: bold;
+}
+
+.aboutme .row{
+    display: flex;
+}
+
+.aboutme .row .col{
+    width: 50%;
+}
+
+.aboutme .row .col h3{
+    font-size: 1.75rem;
+    font-family: 'Righteous';
+    margin-bottom: 2.5rem;
+}
+
+.aboutme .row .col ul{
+    list-style: none;
+}
+
+.aboutme .row .col ul li{
+    margin: .75rem 0;
+}
+
+.aboutme .row .col ul li strong{
+    display: inline-block;
+    color: #1CB689;
+    width: 130px;
+
+}
+
+.aboutme .row .col ul li span{
+    background-color: #1CB689;
+    padding: .25rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.aboutme .row .col .interests-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme .row .col .interests-container .interests{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.aboutme .row .col .interests-container .interests:hover{
+    background-color:#1CB689;
+}
+
+.aboutme .row .col .interests-container .interests i{
+    font-size: 2rem;
+    margin-bottom: .7rem;
+}
+
+.aboutme button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    display: block;
+    margin: 1.25rem auto;
+    padding: .75rem 1.3rem; 
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.aboutme button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB689;
+    z-index: -1;
+    transition: 1s;
+}
+
+.aboutme button:hover .overlay{
+    width: 100%;
+}
