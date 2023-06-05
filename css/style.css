@@ -350,12 +350,12 @@ html{
     100%{width: 60%;}
     
 }
-.skills .skill  .css-sass{
+.skills .skill  .boostrap{
     width: 0%;
-    animation: 2s css-sass forwards;
+    animation: 2s boostrap forwards;
 }
 
-@keyframes css-sass {
+@keyframes boostrap {
     0%{width: 0%;}
     100%{width: 60%;}
     
@@ -551,4 +551,77 @@ html{
     float: left;
     position: relative;
     bottom: 4px;
+}
+
+/* Portfolio */ 
+
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 3.1rem 1.25rem;
+}
+
+.portfolio .section-container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2{
+    font-size: 3rem;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.portfolio .portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .portfolio-container .project{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: .7rem;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-container .project img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio .portfolio-container .project .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8),rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    opacity: 0; 
+}
+
+.portfolio .portfolio-container .project .overlay a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.portfolio .portfolio-container .project .overlay h3{
+    margin-bottom: 1.25rem;
+    transition: 1s;
+}
+
+.portfolio .portfolio-container .project .overlay:hover{
+    opacity: 1;
+}
+
+.portfolio .portfolio-container .project .overlay:hover h3{
+    margin-bottom: 0px;
 }
