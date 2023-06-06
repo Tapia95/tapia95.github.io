@@ -303,15 +303,17 @@
             <div class="row">
                 <!--Form-->
                 <div class="col">
-                    <input type="text" placeholder="Your Name...">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>
-                        Send Message <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form action="https://formspree.io/f/myyaqpnw" method="POST" id="form" class="form">
+                        <input name="name" type="text" placeholder="Your Name...">
+                        <input name="phone"type="text" placeholder="Phone Number">
+                        <input name="email" type="text" placeholder="Email">
+                        <input name="subject" type="text" placeholder="Subject">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!--Map-->
                 <div class="col">
