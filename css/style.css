@@ -217,9 +217,14 @@ html{
     transition: .3s;
 }
 
-.aboutme .row .col .interests-container .interests:hover{
+.aboutme .row .col .interests-container .interests:hover {
     background-color:#1CB689;
 }
+
+.aboutme .row .col .interests-container .interests:hover span{
+    color: #fff;
+}
+
 
 .aboutme .row .col .interests-container .interests i{
     font-size: 2rem;
